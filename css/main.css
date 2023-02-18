@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* adding padding and borders do not inc w or h */
+}
+
+body {
+    background-color: #A6785D;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vmax;
+    text-transform: capitalize;
+}
+
+nav {
+    background-color: #eee;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+nav a:link {
+    color:#000;
+    background-color: #eee;
+    padding: 1em;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+nav a:visited {
+    color:#403333;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color:#eee;
+    background-color: #403333;
+}
+
+nav a:active {
+    color:#eee;
+    background-color: crimson;
+}

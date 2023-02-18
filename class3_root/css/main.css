@@ -1,0 +1,122 @@
+/* css reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* adding padding and borders do not inc w or h */
+}
+
+body {
+    background-color: #A6785D;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+#espresso {
+    background-color: #F2F2F2;
+}
+
+header, footer {
+    background-color: #403333;
+    color:#F2F2F2;
+    padding: 2em;
+    text-align:center;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 7vmax;
+    line-height: 10vmax;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2vmax;
+}
+
+header h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vmax;
+    text-transform: capitalize;
+}
+
+nav {
+    background-color: #eee;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+nav a:link {
+    color:#000;
+    background-color: #eee;
+    padding: 1em;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+nav a:visited {
+    color:#403333;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color:#eee;
+    background-color: #403333;
+}
+
+nav a:active {
+    color:#eee;
+    background-color: crimson;
+}
+
+article {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding:1em;
+   }
+
+   article h2 {
+    text-align:center;
+   }
+   
+   figure {
+    margin-bottom: 1em;
+   }
+
+   figure img {
+    width:100%;
+   }
+   figcaption {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: .8em;
+    font-style: italic;
+    text-align: center;
+   }
+
+   p {
+    margin-bottom: 1em;
+    line-height: 1.5em;
+   }
+
+   .pullq {
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    border-left: solid 30px #403333;
+    margin: 0 1em .5em;
+    padding: .5em 1em;
+    background: url(../images/img.jfif);
+   }
+
+   .pullq::before {
+    content: '{ ';
+   }
+
+   .pullq::after {
+    content: ' }';
+   }
+
+.a2col {
+    column-count: 2;
+}
