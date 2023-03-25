@@ -1,0 +1,20 @@
+body {
+  background-color: darkcyan;
+}
+
+h2 {
+  border-bottom: 2px solid darkcyan;
+}
+
+.container {
+  color: darkcyan;
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+button {
+  background-color: #ffffff;
+  color: darkcyan;
+  border: 1px solid darkcyan;
+  padding: 5px;
+}

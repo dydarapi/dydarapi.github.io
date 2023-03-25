@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+img {
+  width:100%;
+  margin-bottom: 20px;
+}
+
+.masonry {
+  column-count: 3;
+  column-gap: 20px;
+  padding: 20px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+/* Responsive layout - makes a one column-layout instead of four columns */
+@media (max-width: 500px) {
+  .masonry {
+    column-count: 1;
+  }
+}

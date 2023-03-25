@@ -1,0 +1,82 @@
+/* === GRID AREA NAME EXAMPLE === */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*  === MOBILE FIRST === */
+/* === DEFINE THE GRID AREAS === */
+.header {
+  grid-area: header;
+}
+
+.sidebar1 {
+  grid-area: sidebar1;
+}
+
+.sidebar2 {
+  grid-area: sidebar2;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+
+
+/*  === phone view FIRST === */
+section.parent {
+  background-color: #fff;
+  color: #444;
+  width: 100%;
+  display:grid;
+  grid-gap: 20px;
+  grid-template-areas:
+  "header"
+  "content"
+  "sidebar1"
+  "sidebar2"
+  "footer";
+  padding:20px;
+}
+
+.box {
+  background: #eee;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* ===================================== */
+/* === TABLET VIEW 600PX AND LARGER ===*/
+/* ===================================== */
+
+@media only screen and (min-width: 600px)  {
+  section.parent {
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:
+    "header header"
+    "sidebar1 content"
+    "sidebar1 sidebar2"
+    "footer footer";
+  }
+}
+
+/* ===================================== */
+/* === DESKTOP VIEW 980PX AND LARGER ===*/
+/* ===================================== */
+
+@media only screen and (min-width: 980px)  {
+  section.parent {
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "sidebar1 content sidebar2"
+    "sidebar1 content sidebar2"
+    "footer footer footer";
+  }
+}

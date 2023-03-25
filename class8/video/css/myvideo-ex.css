@@ -1,0 +1,73 @@
+/* === DESKTOP FIRST === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header.hero-vid {
+  /* background: #999; */
+  width:100%;
+  height:70vh;
+  position: relative;
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-end;
+  padding: 2rem;
+}
+
+video.bgvid {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+h1 {
+  font-size: 20vmax;
+  color:#fff;
+}
+
+.multi {
+  column-count: 3;
+  width:100%;
+  min-height: 100%;
+  height: auto;
+  background: #fff;
+  padding: 2rem;
+}
+
+p, .smvid {
+  margin-bottom: 1rem;
+}
+
+.smvid {
+  width:100%;
+  outline: none;
+}
+
+/* === TABLET LAYOUT INHERITS FROM DESKTOP 600PX 980PX === */
+@media only screen and (max-width: 980px) {
+  .multi {
+    column-count: 2;
+  }
+}
+
+/* === MOBILE LAYOUT INHERITS FROM DESKTOP AND TABLET 0 - 600PX === */
+@media only screen and (max-width: 600px) {
+  .multi {
+    column-count: 1;
+  }
+  .hero-vid {
+    background: url("../images/grass.png") no-repeat center center;
+    background-size: cover;
+  }
+  .bgvid {
+    display:none;
+  }
+}

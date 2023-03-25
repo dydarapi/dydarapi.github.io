@@ -1,0 +1,68 @@
+/* === MOBILE FIRST === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #eee;
+  font-family: gotham, verdana, sans-serif;
+}
+
+header {
+  padding: 20px;
+  font-size: 2vmax;
+}
+
+
+figure {
+  margin: 20px;
+}
+
+figure img {
+  width:100%;
+}
+
+
+.multi {
+  padding: 20px;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+
+
+/* === TABLET LAYOUT INHERITS FROM MOBILE 600PX 980PX === */
+@media only screen and (min-width: 600px) {
+  .parent {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  figure {
+    flex: 1 45%;
+    /* padding: 20px; */
+  }
+
+  .multi {
+    column-count: 2;
+  }
+}
+
+
+/* === Desktop LAYOUT INHERITS FROM Tablet and Mobile > 980PX === */
+@media only screen and (min-width: 980px) {
+  figure {
+    flex: 1 20%;
+    /* padding: 20px; */
+  }
+
+  .multi {
+    column-count: 3;
+  }
+
+}
