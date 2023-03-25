@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #eee;
+    font-size: 18px;
+    /* this define the em size */
+}
+
+/* === Header info here === */
+header {
+    width: 100%;
+    background: url(../images/photo-1497935586351-b67a49e012bf.avif) no-repeat fixed center;
+    background-size: cover;
+    color: white;
+    padding: 1em;
+}
+
+@keyframes myHeader {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+header h1 {
+    font-family: 'Dancing Script';
+    font-size: 3.5vmax;
+    line-height: 4vmax;
+}
+
+.carousel .item {
+    height: 300px;
+  }
+  
+  .item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 300px;
+  }
+
+/* section text */
+
+.text {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.text article {
+    flex: 3;
+    min-width: 400px;
+    padding: 2em;
+}
+
+.text aside {
+    flex: 1;
+    background-color: darkseagreen;
+    padding: 2em;
+}
+
+.text article p {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    line-height: 1.7em;
+}
+
+.gallery {
+    min-height: 50vh;
+    height: auto;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/img.jfif);
+    padding: 2em;
+}
+
+.gallery div {
+    width: 400px;
+    height: 400px;
+    background-color: #333;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.gallery div img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.position {
+    width: 100%;
+    max-width: 500px;
+    min-height: 50vh;
+    height: auto;
+    background-color: #eee;
+    margin: 0 auto;
+}
+
+.position div {
+    width: 300px;
+    height: 300px;
+    background-color: #333;
+    color: #eee;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.position .rel {
+    background-color: red;
+    position: relative;
+    left: 300px;
+}
+
+/* simple article */
+.simple {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding:1em;
+}
+
+.simple h2 {
+    text-align:center;
+}
+
+.column {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 2em;
+    background-color: #D9A491;
+}
+
+.column div {
+    width: 400px;
+    height: 400px;
+    background-color: #A65F46;
+    color: #F2F2F2;
+    position: sticky;
+    top: 50px;
+    margin: 1em;
+}
+
+p {
+    text-align: justify;
+    padding: 0.5em;
+}
+
+.column div img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+figure {
+    margin-bottom: 1em;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: .8em;
+    font-style: italic;
+    text-align: center;
+}

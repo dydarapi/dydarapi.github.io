@@ -45,3 +45,8 @@ nav a:active {
     color:#eee;
     background-color: crimson;
 }
+
+.final {
+    font-size: 30px;
+    text-align: center;
+}

@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #eee;
+    font-size: 18px;
+    /* this define the em size */
+}
+
+input {
+    margin-left: 0.5em;
+    padding: 0 0.3em;
+}
+
+.video{
+    padding:1em;
+}
+
+.smvid {
+    width: 100%;
+    outline: none;
+}
+
+.gallery {
+    min-height: 50vh;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/img.jfif);
+    padding: 2em;
+}
+
+.gallery div {
+    width: 400px;
+    height: 400px;
+    background-color: #333;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.gallery div img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imageGallery {
+    animation-name: myGallery;
+    animation-duration: 4s;
+}
+
+@keyframes myGallery {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+#simpleFooter {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #myFooter {
+        display: none;
+    }
+
+    #simpleFooter {
+        display: contents;
+    }
+}
